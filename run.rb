@@ -2,6 +2,8 @@
 require 'optparse'
 require 'json'
 require 'csv'
+require 'bundler/setup'
+Bundler.require
 
 # Require files from the app folder
 Dir["./app/**/*.rb"].each { |file| require file }
